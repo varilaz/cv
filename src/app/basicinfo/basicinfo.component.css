@@ -1,0 +1,44 @@
+.container::before{
+    content:"";
+    display: block;
+    background: url(../../assets/alnyomat.jpg);
+    background-repeat: repeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.self{
+    margin: 0px 0px 10px 0px;
+    transform:scaleX(-1);
+    float:right;
+}
+
+@media only screen and (max-width: 500px){
+    
+    p{
+        font-size: 0.7em;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .self{
+        min-width: 50px;
+    }
+
+    p{
+        font-size: 0.6em;
+    }
+}
